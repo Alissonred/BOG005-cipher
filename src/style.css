@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px; /* margen interior de caja*/
+}
+
+body {
+    margin: 0;
+    font-family:cursive;
+    width: 100%;
+    height: 100vh;
+    background-image: url(imag/fondo/fondomadera.PNG);
+    background-size: cover;  /*cubrir toda la pag o background-repeat:no repeat; */
+    background-position: center; /* se posic en centro*/
+    font-size: 100%;
+}
+
+.campo {
+  /*letra interior*/
+    color: brown; 
+  /* espacio*/
+    width: 60%;
+    height: 550px;
+    /*border: 1px solid red;*/
+    margin-left: 15%; /*centrar */
+    margin-top: 2%;   
+
+  /*fondo imag*/
+    background-image: url(imag/fondo/hojasf.png)/*otra url to several*/;
+    background-size: 100% ;  /*cubrir toda la pag*/
+    background-repeat: no-repeat; 
+    background-position: center; 
+    position: relative/*, otra propiedad, otra prop   */;
+}
+
+.titulo { 
+    text-align: center;
+    width: 70%;
+    height: 8%;
+    padding-top: 12%;
+    margin-left: 15%;
+    font-size: 180%;
+   /* border: 1px solid blue;*/
+}
+
+.cuerpo {
+    /*clear: both;*/
+    text-align: left;
+    padding-top: 3%;
+    padding-left: 2%;
+    font-size: 120%;
+    width: 68%;   /* no debería ser 75% del padre */
+    margin-left: 15%;
+    height: 210px;
+    /*border: 1px solid rgb(25, 151, 82);*/
+   
+}
+
+.texto_box{
+  background-color: transparent;
+  border:2px solid chocolate;
+  border-radius: 10px;
+  font-family: cursive;
+  color:brown;
+  font-size:medium;
+}
+
+#entradaw{
+  width: 85%;
+  height: 30%;
+
+}
+
+#clavew {
+  width: 15%;
+  height: 10%;
+  text-align: center;
+}
+
+.lineas{
+  padding-bottom: 0%;
+  margin-bottom:0px ;
+
+}
+
+.botones{
+    width:18%;
+    height: 15%;
+    background-color: rgb(179, 87, 22);
+    color:burlywood; 
+    font-size: 50%;
+    font-family:cursive;
+    border:none; 
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 3%;
+    transition: .3s ease all;   /* anim*/
+  }
+  
+  .botones:hover{
+    background: chocolate;
+  }
+
+.ppal{
+  height: auto;
+  position: absolute;
+  /*border: 1px solid rgb(25, 44, 151);*/
+}
+
+#ladron{
+  right: 8% ;
+  bottom: 4%;
+  width:7%;
+}
+#vs{
+  right: 45% ;
+  bottom: 5%;
+  width:8%;
+}
+#detective{
+  left: 8%;
+  bottom: 5%;
+  width:10%;
+}
+
+#salida_etiq{ 
+  
+  width:85%;
+  height:30%;
+  margin-top: 0%;
+  
+}

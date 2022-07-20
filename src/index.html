@@ -6,8 +6,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <div id="root"> 
+
+      <article class= "campo" >
+        <div class = "titulo" >  DETECTIVES Y CRIMINALES  </div>
+        <div class ="cuerpo"> 
+
+          <div class="lineas">Ingresa el texto </div>
+          <textarea class="texto_box" id="entradaw">AAA </textarea>
+          <br>
+          
+          <label for="nombre" class="lineas">Ingresa la clave </label>
+        
+          <input type="number" class="texto_box" id="clavew" name="clavew" minlength="1" maxlength="2" size="2">  <!--pte condicionar solo a numero -->
+          <br>
+          
+          <button class="botones" type="submit" id="codificar"> <span> CODIFICAR </span></button>
+          <button class="botones" type="submit" id="decodificar"> <span> DECODIFICAR </span> </button>
+          <!--<button class="botones" type="submit" id="again"> <span> DE NUEVO </span> </button> -->
+          <br>
+          <br>
+
+          <div class="lineas"> este es el resultado: </div> 
+          <div class="texto_box" id="salida_etiq" ></div>
+
+
+          <div class ="imagenes_adic"> 
+          <img class="ppal" id= "ladron" src = "imag/temas/LADR_1-removebg-preview.png">
+          <img class="ppal" id= "detective" src = "imag/temas/ESP7_detectiv_logo-removebg-preview-removebg-preview.png"> 
+          <img class="ppal" id= "vs"src = "imag/temas/vs-removebg-preview.png">
+             <!-- <a href= "index.html"> <img src = "imag/fondo/hoja.jpg"> </a>             --> 
+          </div> 
+        </div>
+      </article>
     </div>
     <script src="index.js" type="module"></script>
   </body>
