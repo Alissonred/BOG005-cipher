@@ -1,5 +1,6 @@
 const cipher = {
 
+
 encode(offset, string){
 
 let in_conv;
@@ -31,9 +32,9 @@ let letra;
 
   return ss;
 
-}
+},
  
-/* decode( offset, string){
+decode(offset, string){
 
   let in_conv;
   let salida = [];
@@ -59,12 +60,12 @@ let letra;
      }
       letra= String.fromCharCode(in_conv); // get letra a partir numero
       salida.push (letra);// va llenando array en cd ciclo */
-   //}
-  // let ss = salida.join("");
+   }
+   let ss = salida.join("");
   
-   // return ss;
+   return ss;
   
- // }
+  }
 
 
  
