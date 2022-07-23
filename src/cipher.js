@@ -3,6 +3,11 @@ const cipher = {
 
 encode(offset, string){
 
+if (!offset || !string) {
+ //alert("escribe bien bb");
+  throw new TypeError('ingresa en valores pertinentes');
+}
+
 let in_conv;
 let salida = [];
 let letra;
@@ -34,6 +39,10 @@ let letra;
 },
  
 decode(offset, string){
+  if (!offset || !string) {
+    //alert("oleee");
+     throw new TypeError('ingresa en valores pertinentes');
+   }
 
   let in_conv;
   let salida = [];
@@ -67,7 +76,7 @@ decode(offset, string){
       {
       in_conv = in_asci; // mantiene espacio
       }
-      
+
      else { // otro caso
        in_conv = in_asci;}  
     
