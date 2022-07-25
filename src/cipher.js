@@ -4,8 +4,8 @@ const cipher = {
 encode(offset, string){
 
 if (!offset || !string) {
- //alert("escribe bien bb");
-  throw new TypeError('ingresa en valores pertinentes');
+  alert("Llena los campos ingresando valores pertinentes");
+  throw new TypeError('Llena los campos ingresando valores pertinentes');  // lanza una nueva instancia del objeto error
 }
 
 let in_conv;
@@ -40,8 +40,8 @@ let letra;
  
 decode(offset, string){
   if (!offset || !string) {
-    //alert("oleee");
-     throw new TypeError('ingresa en valores pertinentes');
+    alert("Llena los campos ingresando valores pertinentes");
+     throw new TypeError('Llena los campos ingresando valores pertinentes');
    }
 
   let in_conv;

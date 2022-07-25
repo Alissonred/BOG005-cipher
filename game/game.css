@@ -1,0 +1,45 @@
+.imagenes, .foto {
+
+    background-color: blueviolet;
+    display: inline-block;
+    width: 10% ;
+    grid-template-columns:repeat(5,1fr) ;
+    
+    
+
+} 
+.imagenes{
+    text-align: left;
+}
+.foto{
+    text-align: right;
+}
+
+
+
+/* 
+.grilla {
+
+    display: grid;
+    grid-template-columns:repeat(5,1fr) ;
+    gap: 15px;
+
+} 
+
+  div {
+    
+    background-color: blueviolet;
+} */
+
+/* .im_grande{
+    text-align: center;
+    width:12%;
+    height: auto;
+
+}
+
+.im_peq{
+    text-align: center;
+    width:15%;
+    height: auto;
+} */
