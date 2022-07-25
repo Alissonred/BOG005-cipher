@@ -8,11 +8,12 @@ body {
     font-family:cursive;
     width: 100%;
     height: 100vh;
-    background-image: url(imag/fondo/fondomadera.PNG);
+    background-image: url(../src/imag/fondo/fondomadera.PNG);
     background-size: cover;  /*cubrir toda la pag o background-repeat:no repeat; */
     background-position: center; /* se posic en centro*/
     font-size: 100%;
 }
+ 
 
 .campo {
   /*letra interior*/
@@ -20,12 +21,12 @@ body {
   /* espacio*/
     width: 60%;
     height: 550px;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     margin-left: 15%; /*centrar */
     margin-top: 2%;   
 
   /*fondo imag*/
-    background-image: url(imag/fondo/hojasf.png)/*otra url to several*/;
+    background-image: url(../src/imag/fondo/hojasf.png)/*otra url to several*/;
     background-size: 100% ;  /*cubrir toda la pag*/
     background-repeat: no-repeat; 
     background-position: center; 
@@ -51,7 +52,7 @@ body {
     width: 68%;   /* no debería ser 75% del padre */
     margin-left: 15%;
     height: 210px;
-    /*border: 1px solid rgb(25, 151, 82);*/
+    /* border: 1px solid rgb(25, 151, 82); */
    
 }
 
@@ -61,8 +62,11 @@ body {
   border-radius: 10px;
   font-family: cursive;
   color:brown;
-  font-size:medium;
+  font-size:medium;   
+  width: 25%;
+ 
 }
+
 
 #entradaw{
   width: 85%;
@@ -84,7 +88,7 @@ body {
 
 .botones{
     width:18%;
-    height: 15%;
+    height: 9%;
     background-color: rgb(179, 87, 22);
     color:burlywood; 
     font-size: 50%;
@@ -94,11 +98,14 @@ body {
     cursor: pointer;
     margin-top: 3%;
     transition: .3s ease all;   /* anim*/
-  }
+    margin-left: 15%;
+    margin-right: 15%;
+}
   
   .botones:hover{
     background: chocolate;
   }
+
 
 .ppal{
   height: auto;
@@ -106,12 +113,33 @@ body {
   /*border: 1px solid rgb(25, 44, 151);*/
 }
 
+/*para pagina 1*/
+
+#ladronpag1{
+  right: 18% ;
+  bottom: 42%;
+  width:14%;
+}
+#vspag1{
+  right: 45% ;
+  bottom: 45%;
+  width:12%;
+}
+#detectivepag1{
+  left: 18%;
+  bottom: 45%;
+  width:18%;
+
+}
+/*........................*/
+
+
 #ladron{
   right: 8% ;
   bottom: 4%;
   width:7%;
 }
-#vs{
+#vs, #secr{
   right: 45% ;
   bottom: 5%;
   width:8%;
@@ -128,29 +156,4 @@ body {
   height:30%;
   margin-top: 0%;
   
-}
-
-
-
-
-
-
-#pag1{
-display:block;
-}
-
-#pag2{
-display:none;   
-}
-
-#pag3{
-display:none;       
-}
-
-#pag4{
-display:none;       
-}
-
-#pag5{
-display:none;      
 }
