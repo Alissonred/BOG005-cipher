@@ -8,23 +8,23 @@
 <body>
     
         <article class= "campo" >
-            <div class = "titulo" >  MENSAJES </div>
+            <div class = "titulo" >  CRIMINAL (POSICION)</div>
             
             <div class ="cuerpo" > 
-
-                <div class="lineas">DETECTIVES (Agente 1,Agente 2) </div>
-                <div>
-                    <textarea class="texto_box" >  </textarea>
-                    <textarea class="texto_box" >  </textarea>
-                </div>
-                <br>
-
-                <div class="lineas">CRIMINALES (Criminal 1,Criminal 2) </div>
-                 <div>
-                    <textarea class="texto_box" >  </textarea>
-                    <textarea class="texto_box" >  </textarea>
-                 </div>
-                 <button class="botones" type="submit" id="codificar"> <span> CODIFICAR </span></button>
+              <div class="lineas">Ingresa posición</div>
+              <textarea class="texto_box" id="entradaw"></textarea>
+              <br>
+              
+              <label for="nombre" class="lineas">Ingresa la clave </label>
+    
+              <textarea class="texto_box" id="clavew" >  </textarea>
+              <!--<input type="number" class="texto_box" id="clavew" name="clavew" minlength="1" maxlength="2" size="2">  pte condicionar solo a numero -->
+              <br>
+              <button class="botones" type="submit" id="codificar"> <span> CODIFICAR </span></button>
+              <button class="botones" type="submit" id="decodificar"> <span> DECODIFICAR </span> </button>
+              <br>
+    
+              <div class="texto_box" id="salida_etiq" ></div>
 
               <div class ="imagenes_adic"> 
               <img class="ppal" id= "ladron" src = "../src/imag/temas/LADR_1-removebg-preview.png">
@@ -35,7 +35,7 @@
 
 
             <button class="botones" type="submit" > <a href="pag4.html">MAPA</a> </button>
-            <button class="botones" type="submit" > <a href="pag6.html">DESCIFRADO</a> </button>
+            <button class="botones" type="submit" > <a href="pag6.html">POSICION 2</a> </button>
           </article>
 
     <script src="otras_pag.js" ></script>

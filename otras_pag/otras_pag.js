@@ -86,6 +86,10 @@ function codificar1() {
 
 
 
+   
+
+
+
 /* var boton_adelante = document.getElementById("adelante"); 
 var boton_atras = document.getElementById("atras"); 
 

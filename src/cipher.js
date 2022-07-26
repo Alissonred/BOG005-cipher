@@ -26,6 +26,12 @@ let letra;
     {
     in_conv = in_asci; // mantiene espacio
     }
+   
+    else if (in_asci > 47 && in_asci < 58) // evalua numeros
+    {
+      in_conv = ((in_asci - 48) + offset ) %10 + 48; // si no cuenta normal desde cero
+    }
+
    else { // otro caso
      in_conv = in_asci;
    }
@@ -51,13 +57,13 @@ decode(offset, string){
    for (var i = 0; i <= string.length-1; i++) {  /// tratar de usar for of, cuenta hasta leng-1 xq cuenta el 0 al get size
    let in_asci= string.charCodeAt(i); // get #asci de cada letra de string
     //// evalua mayusculas
-      if (in_asci > 64 && in_asci < 91)  
+      if (in_asci > 64 && in_asci < 91)  // evalua si es mayuscula
       {
         if ((in_asci - 65) - offset <0 ) {  //// si nueva posicion es negativa
           in_conv = (((in_asci - 65 +26) - (offset-26) )) %26 + 65; // añada 26 a posicion de ref y quite a offset esos 26
          }
          else{
-        in_conv = ((in_asci - 65) - offset) %26 + 65; // conv a nuevo alf, en otro #
+        in_conv = ((in_asci - 65) - offset) %26 + 65; // si no cuenta normal desde cero
          }
       }
      //// evalua minusculas
@@ -75,6 +81,16 @@ decode(offset, string){
      else if (in_asci == 32 )   
       {
       in_conv = in_asci; // mantiene espacio
+      }
+    
+     else if (in_asci > 47 && in_asci < 58) // evalua numeros
+      {
+        if ((in_asci - 48) - offset <0 ) {  //// si nueva posicion es negativa
+          in_conv = (((in_asci - 48 +10) - (offset-10) )) %10 + 48; // añada 26 a posicion de ref y quite a offset esos 26
+         }
+         else{
+        in_conv = ((in_asci - 48) - offset) %10 + 48; // si no cuenta normal desde cero
+         } 
       }
 
      else { // otro caso
