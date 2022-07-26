@@ -1,5 +1,4 @@
 
-
 //.....................pag 4 (para mapa).....................................................................................
 let boton_grid = document.getElementById("grilla_print"); // traigo el boton
 let principal = document.getElementById("objects");
@@ -21,30 +20,36 @@ let principal = document.getElementById("objects");
      lugares[13]= ["../src/imag/partes de ciudad/hotel-removebg-preview.png", 4 ]
      lugares[14]= ["../src/imag/partes de ciudad/iglesia-removebg-preview.png", 4 ]
 
-
+let coins= []
 function new_set () {       
 
         for (i=0;lugares.length;++i) {
             let montos = Math.floor(Math.random()*(2000)+ 80);
-            lugares[i][1] = montos;
-            console.log(lugares[i][1]);
+            lugares[i][1] = montos; // buscar por que el error
+            //console.log(lugares[i][1]);
             let creadiv = document.createElement("div") ;//// para crear etiquetas div
             let creaimag = document.createElement("img"); // para crear etiquetas imagen
             creadiv.setAttribute("class","foto");
             creaimag.setAttribute("class","imagenes");
-            //lugares[i][1]+= lugares[i][1];
             creadiv.innerHTML=lugares[i][1];
             creaimag.setAttribute("src",lugares[i][0]); // asigna atributos a los elem creados
             principal.appendChild(creadiv); //agrega ese elemento al final
             principal.appendChild(creaimag); //agrega ese elemento al final
-           // creaimag.innerHTML(every_spaces[i]);
+            let valores = lugares [i][1];
+            //console.log(valores); 
+            coins.push (valores);
+        }
+    return coins;
 
-        } 
-    
 }
 
 boton_grid.addEventListener("click", new_set);// asigno evento al boton
-//............................................................................................................................
+
+//.................................................Evaluacion juego...................................................................
+
+
+  
+
 
 
 //..............de index y cipher.............................................................................................

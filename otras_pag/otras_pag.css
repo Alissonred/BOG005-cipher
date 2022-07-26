@@ -21,7 +21,7 @@ body {
   /* espacio*/
     width: 60%;
     height: 550px;
-    border: 1px solid red;
+   /* border: 1px solid red;*/
     margin-left: 15%; /*centrar */
     margin-top: 2%;   
 
@@ -63,7 +63,7 @@ body {
   font-family: cursive;
   color:brown;
   font-size:medium;   
-  width: 25%;
+  width: 15%;
  
 }
 
