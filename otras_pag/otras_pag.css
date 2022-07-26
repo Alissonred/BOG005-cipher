@@ -117,20 +117,25 @@ body {
 
 #ladronpag1{
   right: 18% ;
-  bottom: 42%;
+  bottom: 40%;
   width:14%;
 }
 #vspag1{
   right: 45% ;
-  bottom: 45%;
+  bottom: 42%;
   width:12%;
 }
 #detectivepag1{
   left: 18%;
-  bottom: 45%;
+  bottom: 42%;
   width:18%;
 
 }
+
+#jugar{
+  margin-left: 40%; 
+  }
+
 /*........................*/
 
 
@@ -157,3 +162,27 @@ body {
   margin-top: 0%;
   
 }
+
+/*  para mapa..........................*/
+.imagenes, .foto {
+
+  background-color: transparent;
+  display: inline-block;
+  width: 10% ;
+  grid-template-columns:repeat(5,1fr) ;
+  
+  
+
+} 
+.imagenes{
+  text-align: left;
+}
+.foto{
+  text-align: right;
+}
+
+#grilla_print {
+  margin-left: 2%;
+}
+
+
