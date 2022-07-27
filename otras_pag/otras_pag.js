@@ -1,7 +1,9 @@
 
 //.....................pag 4 (para mapa).....................................................................................
-let boton_grid = document.getElementById("grilla_print"); // traigo el boton
-let principal = document.getElementById("objects");
+let boton_grid = document.getElementById("grilla_print"); // boton que genera mapa
+let principal = document.getElementById("objects");       // div donde se hace el mapa
+let boton_eval = document.getElementById("eval");         // boton que evalua juego
+
 // OPC 2 CREAMOS ARRAY CON ARRAYS QUE CONTENGAN PROP DE CU
     var lugares =new Array();
      lugares[0]= ["../src/imag/partes de ciudad/estacion_de_bus-removebg-preview.png", 1 ]
@@ -21,7 +23,7 @@ let principal = document.getElementById("objects");
      lugares[14]= ["../src/imag/partes de ciudad/iglesia-removebg-preview.png", 4 ]
 
 let coins= []
-function new_set () {       
+function new_set () {       /// funcion  que genera grilla con valores aleat
 
         for (i=0;lugares.length;++i) {
             let montos = Math.floor(Math.random()*(2000)+ 80);
@@ -41,14 +43,28 @@ function new_set () {
         }
     return coins;
 
+} 
+
+
+/* function evaluar_game() {  // funcion que evalua 
+ // let pos_ladron = parseInt (document.getElementById("entradaw").value);// posicion ladron (posicion en vector coins)
+  let pos_detective = parseInt (document.getElementById("entrada2").value);// posicion detective (posicion en vector coins)
+  alert(pos_detective); 
+
+ console.log("upasi");
 }
 
-boton_grid.addEventListener("click", new_set);// asigno evento al boton
+boton_eval.addEventListener("click", evaluar_game);// boton evalua juego */
+
+boton_grid.addEventListener("click", new_set);// asigno evento al boton que genera grilla
+
+
 
 //.................................................Evaluacion juego...................................................................
 
 
-  
+
+
 
 
 

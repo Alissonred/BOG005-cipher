@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>INICIO</title>
+        <link rel="stylesheet" href="integracion.css" />
+    </head>
+<body>
+    
+        <section class= "campo" id="pag1" >
+            <div class = "titulo" >  CRIMINALES Y DETECTIVES  </div>
+            
+            <div class ="cuerpo" > 
+        
+              <div class ="imagenes_adic"> 
+              <img class="ppal" id= "ladronpag1" src = "../src/imag/temas/LADR_1-removebg-preview.png">
+              <img class="ppal" id= "detectivepag1" src = "../src/imag/temas/ESP7_detectiv_logo-removebg-preview-removebg-preview.png"> 
+              <img class="ppal" id= "vspag1" src = "../src/imag/temas/vs-removebg-preview.png">
+              </div> 
+            </div>
+            <button class="botones" id="jugar" type="submit" ><a href="pag2.html">JUGAR</a> </button> 
+        </section>
+
+        <section class= "campo" id="pag2" >
+            <div class = "titulo" >  REGLAS </div>
+            <div class ="cuerpo" > 
+            <div clas="texto_box">  Cada participante deberá seleccionar una ubicación. en mapa de ciudad y obtener ó defender el dinero del lugar
+                Si distancia ortogonal entre criminal y detective es menor a 2; el dinero es para el detective
+                Si distancia ortogonal entre criminal y detective es mayor a 2; el dinero es para el criminal
+                Si los dos criminales toman el mismo lugar pierden dinero (oportunidad perdida)</div>
+
+              <div class ="imagenes_adic"> 
+              <img class="ppal" id= "ladron" src = "../src/imag/temas/LADR_1-removebg-preview.png">
+              <img class="ppal" id= "detective" src = "../src/imag/temas/ESP7_detectiv_logo-removebg-preview-removebg-preview.png"> 
+              <img class="ppal" id= "vs" src = "../src/imag/temas/vs-removebg-preview.png">
+              </div> 
+            </div>
+        </section>
+      
+        <section class= "campo" id="pag3" >
+            <div class = "titulo" >  JUGADORES </div>
+            <div class ="cuerpo"  > 
+                <div class="lineas">CRIMINAL (Nombre) </div>
+                <div>
+                    <textarea class="texto_box" >  </textarea>
+                </div>
+                <br>
+
+                <div class="lineas">DETECTIVE (Nombre)</div>
+                 <div>
+                    <textarea class="texto_box" >  </textarea>
+
+                 </div>
+              <div class ="imagenes_adic"> 
+              <img class="ppal" id= "ladron" src = "../src/imag/temas/LADR_1-removebg-preview.png">
+              <img class="ppal" id= "detective" src = "../src/imag/temas/ESP7_detectiv_logo-removebg-preview-removebg-preview.png"> 
+              <img class="ppal" id= "vs" src = "../src/imag/temas/vs-removebg-preview.png">
+              </div> 
+            </div>
+        </section>
+
+        <section class= "campo" id="pag4" >
+            <div class = "titulo" >  MAPA  </div>
+            
+            <div class ="cuerpo"  > 
+            <button class="botones" type="submit" id="grilla_print"> <span> NUEVO SET </span></button> 
+            <div id="objects"> </div>
+
+            </div>
+
+        </section>
+          
+        <section class= "campo" id="pag5">
+            <div class = "titulo" >  CRIMINAL (POSICION)</div> 
+            <div class ="cuerpo" > 
+                <div class="lineas">Ingresa posición</div>
+                <textarea class="texto_box" id="entradaw"></textarea>
+                <br>
+                
+                <label for="nombre" class="lineas">Ingresa la clave </label>
+      
+                <textarea class="texto_box" id="clavew" >  </textarea>
+                <!--<input type="number" class="texto_box" id="clavew" name="clavew" minlength="1" maxlength="2" size="2">  pte condicionar solo a numero -->
+                <br>
+                <button class="botones" type="submit" id="codificar"> <span> CODIFICAR </span></button>
+                <button class="botones" type="submit" id="decodificar"> <span> DECODIFICAR </span> </button>
+                <br>
+      
+                <div class="texto_box" id="salida_etiq" ></div>
+  
+                <div class ="imagenes_adic"> 
+                <img class="ppal" id= "ladron" src = "../src/imag/temas/LADR_1-removebg-preview.png">
+                <img class="ppal" id= "detective" src = "../src/imag/temas/ESP7_detectiv_logo-removebg-preview-removebg-preview.png"> 
+                <img class="ppal" id= "vs" src = "../src/imag/temas/vs-removebg-preview.png">
+                </div> 
+              </div>
+        </section>
+
+        
+        <section class= "campo" id="pag6">
+            <div class = "titulo" >  CRIMINAL (POSICION)</div>
+            <div class ="cuerpo"  > 
+                <div class="lineas">Ingresa posición </div>
+                <div>
+                   <textarea class="texto_box" id="entrada2">  </textarea>
+  
+                </div>
+  
+  
+                <br>
+                <div class ="imagenes_adic"> 
+                <img class="ppal" id= "ladron" src = "../src/imag/temas/LADR_1-removebg-preview.png">
+                <img class="ppal" id= "detective" src = "../src/imag/temas/ESP7_detectiv_logo-removebg-preview-removebg-preview.png"> 
+                <img class="ppal" id= "vs" src = "../src/imag/temas/vs-removebg-preview.png">
+                </div> 
+              </div>
+  
+        </section>
+
+        <section class= "campo" id="pag7"> 
+            <div class = "titulo" > RESULTADOS </div>
+            
+            <div class ="cuerpo" > 
+              <button class="botones" type="button" id="eval"> <span> Evaluar juego </span></button> 
+              <br>
+              <div class ="imagenes_adic"> 
+              <img class="ppal" id= "ladron" src = "../src/imag/temas/LADR_1-removebg-preview.png">
+              <img class="ppal" id= "detective" src = "../src/imag/temas/ESP7_detectiv_logo-removebg-preview-removebg-preview.png"> 
+              <img class="ppal" id= "vs" src = "../src/imag/temas/vs-removebg-preview.png">
+              </div> 
+            </div>
+
+        </section>
+
+
+
+
+    <script src="integracion.js" ></script>
+</body>
+</html>

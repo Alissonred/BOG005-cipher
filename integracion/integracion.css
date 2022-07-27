@@ -185,8 +185,7 @@ body {
   margin-left: 2%;
 }
 
-
-.muestra_pag1 p
-{
-display: none;
+#pag2, #pag3, #pag4, #pag5, #pag6, #pag7  {
+ /*    visibility: hidden; */
 }
+
