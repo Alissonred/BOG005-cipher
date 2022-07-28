@@ -26,12 +26,15 @@ lugares[13]= ["../src/imag/partes de ciudad/hotel-removebg-preview.png", 4 ]
 lugares[14]= ["../src/imag/partes de ciudad/iglesia-removebg-preview.png", 4 ]
 
 let coins= []
-function new_set () {       /// funcion  que genera grilla con valores aleat
-
-  for (i=0;lugares.length;++i) {
+ function new_set () {       /// funcion  que genera grilla con valores aleat
+  
+  for (var i=0; i <= lugares.length -1 ; ++i) {      /// revisar la condicion
+    //alert("entro for");
       let montos = Math.floor(Math.random()*(2000)+ 80);
+      //console.log(montos);
       lugares[i][1] = montos; // buscar por que el error
       console.log(lugares[i][1]);
+      
       let creadiv = document.createElement("div") ;//// para crear etiquetas div
       let creaimag = document.createElement("img"); // para crear etiquetas imagen
       creadiv.setAttribute("class","foto");
@@ -43,11 +46,11 @@ function new_set () {       /// funcion  que genera grilla con valores aleat
       let valores = lugares [i][1];
       //console.log(valores); 
       coins.push (valores);
-      console.log(coins);
+      console.log(coins); 
   }
-return coins;
-
-} 
+  //return coins;
+ alert("fin for");
+}  
 
 ///////////////////////////////////////code-decode////////////////////////////////////////////////////
 
