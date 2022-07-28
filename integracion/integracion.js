@@ -1,3 +1,7 @@
+//import cipher from './cipher.js'; /// traer objeto cifrado donde están las funciones ppales
+
+var boton_codificar = document.getElementById("codificar"); // trae codificar
+var boton_decodificar = document.getElementById("decodificar"); // trae codificar
 let boton_eval = document.getElementById("eval");         // boton que evalua juego
 let boton_grid = document.getElementById("grilla_print"); // boton que genera mapa
 let principal = document.getElementById("objects");       // div donde se hace el mapa
@@ -43,7 +47,23 @@ return coins;
 
 } 
 
-
+/////////FUNCIONES ENCODE, DECODE//////////////////////////
+/* function codificar1() {
+    let string = document.getElementById("entradaw").value;  // lee entrada  /// lineas deben ir dentro de funcion
+    let offset = parseInt (document.getElementById("clavew").value) ; //lee clave
+    //alert(cipher.encode(offset,string));
+    //console.log(cipher.encode(offset,string));
+    document.getElementById("salida_etiq").textContent = cipher.encode(offset,string) ;/// con innerHtml tambien se puede
+   }
+  
+   function decodificar1() {
+    let string = document.getElementById("entradaw").value;  // lee entrada  /// lineas deben ir dentro de funcion
+    let offset = parseInt (document.getElementById("clavew").value) ; //lee clave
+    //alert(cipher.decode(offset,string));
+    //console.log(cipher.decode(offset,string));
+    document.getElementById("salida_etiq").textContent = cipher.decode(offset,string) ;/// ahí escriba ...con innerHtml tambien se puede
+   } */
+///////// FUNCION EVALUAR GAME//////////////////////////
 
  function evaluar_game() {  // funcion que evalua el juego
   let pos_ladron = parseInt (document.getElementById("entradaw").value);// posicion ladron (posicion en vector coins)
@@ -89,6 +109,8 @@ return coins;
 
   }
 }
-
+////////////////////////////////////////////////////////
+/* boton_codificar.addEventListener("click", codificar1 ); // lee evento click de boton codificar
+boton_decodificar.addEventListener("click", decodificar1 );// lee evento click de boton decodificar */
 boton_grid.addEventListener("click", new_set);// asigno evento al boton que genera grilla
 boton_eval.addEventListener("click", evaluar_game);// boton evalua juego 
